@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+   
+    <!--Link para acessar os icones do site font-awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>CRUD</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <span>Cadastro de Funcionário</span>
+        <button onclick="openModal()" id="new">Incluir</i></button>
+        <a href="index.html"><button id="new">Voltar</i></button></a>
+    </div>
+         <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Idade</th>
+                        <th>Qualificação</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                </tbody>
+            </table>
+         </div>   
+
+         <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome" type="text" required>
+
+                    <label for="m-funcao">Função</label>
+                    <input id="m-funcao" type="text" required>
+
+                    <label for="m-idade">Idade</label>
+                    <input id="m-idade" type="text" required>
+
+                    <label for="m-qual">Qualificação</label>
+                    <input id="m-qual" type="text" required>
+
+                    <button id="btnCadastro">Cadastro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="JS/script.js"></script>
+
+
+</body>
+</html>
